@@ -1,26 +1,26 @@
-# Image gallery
+# Joke's Generator
 
-> A simple
+> A simple Joke generator
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Joke's Generator](#jokes-generator)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
-> The objective of the project is to practice separation of concern in
-> JavaScript.
+> The objective of the project is to practice .
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/Capture%20d’écran%202024-05-15%20123906.png)
 
 ## Technologies
 
@@ -36,26 +36,25 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
-
+const getJokeApi = async () => {
+	try {
+		const res = await fetch('https://v2.jokeapi.dev/joke/Any');
+		if (res.ok) {
+			const data = await res.json();
+			return data;
+		} else {
+			throw new Error('failed to fetch');
+		}
+	} catch (err) {
+		console.error(err);
+	}
+};
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
 Project is: _in progress_
 
-## Inspiration
-
 ## Contact
+
+- [Rodica](https://github.com/rodicailciuc)
