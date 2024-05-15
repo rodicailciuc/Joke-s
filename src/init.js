@@ -1,3 +1,3 @@
-import getJoke from './events/getJokeevent.js';
+import getJokeEvent from './events/getJokeEvent.js';
 
-getJoke();
+getJokeEvent();
